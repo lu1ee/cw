@@ -100,10 +100,10 @@ source ~/.zshrc
 
 ```bash
 # 1. 저장소 클론
-git clone https://github.com/lu1ee/cw.git ~/bin/cw-repo
+git clone https://github.com/lu1ee/cw.git ~/bin/cw-cli
 
 # 2. 심볼릭 링크 생성
-ln -s ~/bin/cw-repo/cw ~/bin/cw
+ln -s ~/bin/cw-cli/cw ~/bin/cw
 
 # 3. PATH 추가 (아직 없다면)
 echo 'export PATH="$HOME/bin:$PATH"' >> ~/.zshrc
@@ -650,7 +650,7 @@ cw --version
 
 ```bash
 # 1. 저장소 업데이트
-cd ~/bin/cw-repo
+cd ~/bin/cw-cli
 git pull origin main
 
 # 2. 확인
@@ -669,7 +669,7 @@ cw stop
 rm ~/bin/cw
 
 # 또는 Git으로 설치한 경우
-rm -rf ~/bin/cw-repo
+rm -rf ~/bin/cw-cli
 rm ~/bin/cw  # 심볼릭 링크 제거
 
 # 3. 확인
